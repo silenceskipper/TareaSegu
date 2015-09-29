@@ -1,0 +1,9 @@
+<%= form_for @account, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+  <%= f.label :email %><br>
+  <%= f.text_field :email %><br>
+  <%= f.label :password %><br>
+  <%= f.text_field :password %><br>
+
+  <%= f.submit "Create" %>
+<% end %>
+
